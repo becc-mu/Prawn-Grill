@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="assets/media_size.css">
+<link rel="stylesheet" href="assets/recipeGrid.css">
+<link rel="stylesheet" href="assets/main.css">
+<style>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #fff;
+  margin: 10px 10px 0 0;
+}
+
+.topnav a {
+  float: right;
+  display: block;
+  color: #696969;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+.topnav a:hover {
+  background-color: #ddd;
+  color: #E9474B;
+}
+
+.active {
+  background-color: #E9474B;
+  color: white;
+}
+
+.topnav .icon {
+  display: none;
+}
+.logo {
+  max-width: 100px;
+  max-height: 100px;
+  overflow: visible;
+  float: left;
+  background-color: transparent;
+  position: relative;
+  margin: 0.1rem 0 0 5rem;
+}
+
+#logo {
+  display: block;
+  float: left;
+}
+
+#logo span {
+  font-weight: 400;
+  line-height: 5.4em;
+  letter-spacing: 0.2em;
+  font-size: 0.9em;
+  /* vertical-align: middle; */
+  margin: 0 0 0 1rem;
+  color: #E9474B;
+  /* float: right; */
+}
+
+span h1 {
+  font-weight: 400;
+  /* line-height: 5.4em; */
+  letter-spacing: 0.2em;
+  /* font-size: 0.9em; */
+  /* vertical-align: middle; */
+  margin: 10px 0 0  0;
+  color: #E9474B;
+  float: right;
+}
+
+/*Main Image at the thp*/
+section.row.full {
+  float: left;
+  width: 100%;
+  display: flex;
+  margin: -1.75em 0 3.0em 0;
+}
+
+.hero-img {
+  position: relative;
+  width: 100%;
+}
+#hero-img {
+  position: relative;
+}
+#hero-img img {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+}
+@media screen and (max-width: 600px) {
+  .topnav a {display: none;}
+  .topnav a.icon {
+  float: right;
+  display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+}
+}
+</style>
+</head>
+<body>
+<div id="page-wrapper">
+  <header class="header-wrapper">
+    <div class="topnav responsive" id="myTopnav">
+        <a href="#home" class="active">Home</a>
+        <a href="#">ABOUT THE PROWN GRILL</a>
+        <a href="#">DECORATION</a>
+        <a href="#">DRINKS</a>
+        <a href="#">RECEPIES</a>
+        <!--Show hamberger menu on click-->
+        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+        <i class="fa fa-bars"></i>
+        </a>
+        <div id="logo">
+          <span><h1>The Prawn Grill</h1></span>
+        <a href="index.html"><img class="logo" src="images/bitmaplogo.png" alt="logo"></a>
+        </div>
+    </div>
+  </header>
+<!--Top content-->
+<div id="banner-wrapper">
+<section class="row">
+  <article class="col_10">
+<div id="hero-img">
+          <img src="images/bakled-polenta-with-italian-sausagebakled-polenta-with-italian-sausage.png" alt="baked sausages with Italian sausage" id="hero-img" class="hero-img">
+      <div class="text-block">
+        <h6 class="white">Latest recepies</h6>
+          <h3>Baked Polenta with Cheese and Mushrooms.</h3>
+          <p class="white">Polenta, goat cheese, Italian sausage, and cremini mushrooms. All together this will make for pretty darn good side dish to a lovely salad. Go for it.</p>
+
+          <button type="button" class="button">Go to Recepi &#x2192;<i class="fa fa-arrow-right"></i></button>
+      </div>
+  </div>
+  </article>
+</section>
+</div>
+
+<!--Recepies box-->
+
+    <h2 class="content">Our Recipies</h2>
+      <div id="myBtnContainer">
+        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
+        <button class="btn" onclick="filterSelection('foodType')"> foodType</button>
+        <button class="btn" onclick="filterSelection('nationality')"> nationality</button>
+        <button class="btn" onclick="filterSelection('fruits')"> Fruits</button>
+        <button class="btn" onclick="filterSelection('colors')"> Colors</button>
+      </div>
+      <div class="grid-container">
+        <div class="filterDiv foodType">
+          <h6>5TH MARCH 2016<span>THAI</span></h6>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="img_forest.jpg">
+                <img src="images/recipe1.jpg" alt="Forest" width="600" height="400" class="responsove">
+              </a>
+          </div>
+          <div class="filterDiv colors fruits">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="img_forest.jpg">
+              <img src="images/recipe2.png" alt="Forest" width="600" height="400">
+            </a>
+          </div>
+
+            <div class="filterDiv foodType">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="img_lights.jpg">
+                <img src="images/recipe3.png" alt="Northern Lights" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv foodType nationality italian">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="img_mountains.jpg">
+                <img src="images/recipe4.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv colors">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="recipe5.png">
+                <img src="images/recipe5.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv nationality french">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="recipe6.png">
+                <img src="images/recipe6.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv nationality spanish">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="recipe7.png">
+                <img src="images/recipe7.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+
+            <div class="filterDiv fruits nationality chinese">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="recipe8.png">
+                <img src="images/recipe8.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv fruits">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="recipe9.png">
+                <img src="images/recipe9.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv fruits">
+              <h6>5TH MARCH 2016<span>THAI</span></h6>
+              <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+              <a target="_blank" href="recipe5.png">
+                <img src="images/recipe5.png" alt="Mountains" width="600" height="400">
+              </a>
+            </div>
+            <div class="filterDiv nationality peruvian">
+          <h6>5TH MARCH 2016<span>THAI</span></h6>
+          <p>Lorem ipsum dolor sit amet, tempor prodesset eos no. Temporibus necessitatibus sea ei, at tantas oporteat nam. Lorem ipsum dolor sit amet, tempor prodesset eos no.</p>
+          <a target="_blank" href="recipe10.png">
+            <img src="images/recipe10.png" alt="Mountains" width="600" height="400">
+          </a>
+        </div>
+      </div>
+
+</div>
+<div id="footer-wrapper">
+  <footer id="footer">
+    <section id="signup">
+      <article id="form-group" class="red">
+            <h4>Spread the word!</h4>
+            <p>Our recipes are awesome, sign up to our newsletter and invite friends to join the Grilled Prawn cult.<p>
+            <section class="section">
+        <div class="column column--1">
+            <div class="veryfication">
+                <div class="veryfication__form">
+                    <form id="form" action="http://titan.dcs.bbk.ac.uk/~ubseaxt/process.php" method="post" novalidate class="form">
+                        <div class="u-margin-bottom-medium">
+                        </div>
+
+                        <div class="form__group">
+                          <label for="name">Name</label>
+                            <input type="text" class="form__input" placeholder="Samatha" name="name" data-error-message="Put your real data." required>
+                        </div>
+                        <div class="form__group">
+                          <label for="surname">Surname</label>
+                            <input type="text" class="form__input" placeholder="Smith" name="surname" data-error-message="Put your real data." required>
+                        </div>
+                        <div class="form__group">
+                          <label for="email">Email-address</label>
+                            <input type="email" class="form__input" placeholder="Samatha@smith.com" name="email" data-error-message="Put correct e-mail address." required>
+                        </div>
+
+                        <div class="form__group">
+                            <input type="submit" class="btn" name="submit" value="Send&rarr;">
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+        <div class="column column--2">
+            <div class="alert">
+                <ol>
+                </ol>
+            </div>
+        </div>
+    </section>
+        </article>
+  </section>
+    <section class="row">
+      <article class="col_2">
+          <h4>Our Recepies</h4>
+          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Quam elementum pulvinar etiam non. Erat imperdiet sed euismod nisi porta lorem mollis aliquam ut. Est sit amet facilisis magna etiam tempor orci eu. Quis blandit turpis cursus in hac habitasse platea dictumst quisque. At risus viverra adipiscing at in.</p>
+      </article>
+      <article class="col_2">
+        <h4>Grilled Prown's History</h4>
+        <p>The Grilled Prown is a fictional food blog created in January 2015</p>
+
+      </article>
+      <article class="col_2">
+        <h4>Tips and Tricks</h4>
+        <p>Not sure how to do something? Don't panic we have planty of tutorials for you.</p>
+        <a href="#">learn more</a>
+      </article>
+      <article class="col_2">
+        <h4>Help and Contact</h4>
+        <p>Struggling with one of the recipes?</p>
+          <a href="#">Send us an email</a>
+        <p>We are always happy to try new things, send us your suggestions!</p>
+          <a href="#">Fill in the form</a>
+      </article>
+      <article class="col_2">
+        <h4>&copy; The Grilled Prown</h4>
+        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed imperdiet, lectus quis interdum viverra,erat mi consectetur mi, a fringilla odio risus vel augue. Mauris tempor ligula fringilla magna iaculis, non vulputate tellus interdum.</p>
+        <p>The images and recipes ideas were taken from spoonforkbacon.com and the icons from Google Material Icons.</p>
+      </article>
+    </section>
+  </footer>
+</div>
+<script>
+    function myFunction() {
+    var x = document.getElementById("myTopnav");
+    if (x.className === "topnav") {
+    x.className += " responsive";
+    } else {
+    x.className = "topnav";
+    }
+  }
+
+  /*Recipe Grid Script*/
+  filterSelection("all")
+  function filterSelection(c) {
+    var x, i;
+    x = document.getElementsByClassName("filterDiv");
+    if (c == "all") c = "";
+    for (i = 0; i < x.length; i++) {
+      w3RemoveClass(x[i], "show");
+      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+    }
+  }
+
+  function w3AddClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+    }
+  }
+
+  function w3RemoveClass(element, name) {
+    var i, arr1, arr2;
+    arr1 = element.className.split(" ");
+    arr2 = name.split(" ");
+    for (i = 0; i < arr2.length; i++) {
+      while (arr1.indexOf(arr2[i]) > -1) {
+        arr1.splice(arr1.indexOf(arr2[i]), 1);
+      }
+    }
+    element.className = arr1.join(" ");
+  }
+
+  // Add active class to the current button (highlight it)
+  var btnContainer = document.getElementById("myBtnContainer");
+  var btns = btnContainer.getElementsByClassName("btn");
+  for (var i = 0; i < btns.length; i++) {
+    btns[i].addEventListener("click", function(){
+      var current = document.getElementsByClassName("active");
+      current[0].className = current[0].className.replace(" active", "");
+      this.className += " active";
+    });
+  }
+</script>
+<script src="scripts.js"></script>
+
+</body>
+</html>
