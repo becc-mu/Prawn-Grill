@@ -1,0 +1,78 @@
+/*Media query starter break pontes*/
+.example {
+    padding: 20px;
+    color: white;
+}
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    .example {background: red;}
+  /*HAMBERGER MENU HIDES MENU*/
+  .topnav a {display: none;}
+  .topnav a.icon {
+  float: right;
+  display: block;
+  }
+  /*Position the hamberger icon at the top corner*/
+  .topnav.responsive {position: relative;}
+  .topnav.responsive .icon {
+  position: absolute;
+  right: 0;
+  top: 0;
+  }
+  .topnav.responsive a {
+  float: none;
+  display: block;
+  text-align: left;
+  }
+    /*RECEPIES box*/
+    .filterDiv {
+        width: 100%;
+    }
+  .logo {display: none;}
+    span h1 {display: none;}
+
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+@media only screen and (min-width: 600px) {
+    .example {background: green;}
+    /*RECEPIES box*/
+    .filterDiv {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+
+}
+
+/* Medium devices (landscape tablets, 768px and up) */
+@media only screen and (min-width: 768px) {
+    .example {background: blue;}
+
+
+    /*Reduce logo image by 50% and position to top left*/
+    .logo {
+        max-width: 50px;
+        max-height: 50px;
+        float: left;
+        background-color: transparent;
+        position: relative;
+        margin: -3rem 0 0 0;
+    }
+
+
+}
+
+/* Large devices (laptops/desktops, 992px and up) */
+@media only screen and (min-width: 992px) {
+    .example {background: orange;}
+}
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) {
+    .example {background: pink;}
+}
+
+/* hi-res laptops and desktops */
+@media (min-width:1281px) {
+  .example {background: green;}
+}

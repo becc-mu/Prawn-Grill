@@ -1,0 +1,85 @@
+/*Recepies box Styling*/
+.filterDiv {
+  float: left;
+  background-color: #fff;
+  color: #000;
+  width: 100px;
+  text-align: center;
+  margin: 2px;
+  display: none;
+}
+.filterDiv {
+  padding: 0 6px;
+  float: left;
+  min-width: 24.999999%;
+  height: auto;
+  overflow: hidden;
+  justify-content: center;
+}
+.show {
+  display: block;
+}
+
+.container {
+  margin-top: 20px;
+  overflow: hidden;
+  background: #f6f6f6;
+}
+
+/* Style the buttons */
+.btn {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: #f1f1f1;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #ddd;
+}
+
+.btn.active {
+  background-color: #666;
+  color: white;
+}
+/*Responsive*/
+* {
+    box-sizing: border-box;
+}
+/*Div content text alignments*/
+.nat {
+    text-align: right;
+    vertical-align: top;
+}
+.desc {
+    text-align: left;
+}
+.desc ul {
+    list-style: none;
+}
+.desc ul li {
+    padding-top: 0;
+}
+.date {
+    margin-top: 0;
+}
+
+@media only screen and (max-width: 700px) {
+    .filterDiv {
+        width: 49.99999%;
+        margin: 6px 0;
+    }
+}
+
+@media only screen and (max-width: 500px) {
+    .filterDiv {
+        width: 100%;
+    }
+}
+
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
